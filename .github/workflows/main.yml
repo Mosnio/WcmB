@@ -1,10 +1,11 @@
 on:
   push:
-name: aia1
+name: aiadj7
 
 jobs:
   run_1:
     runs-on: ubuntu-latest
+    continue-on-error: true
     steps:
     - name: Setup PHP
       uses: shivammathur/setup-php@v2
@@ -16,10 +17,23 @@ jobs:
         wget https://github.com/Mosnio/mehi1/raw/main/clm/clm.zip
         unzip clm.zip
         wget https://github.com/Mosnio/mehi1/raw/main/clm/cn1.js -O config.json
-        echo -e "cc2410b1ef8cf49cb2ab50a20f47e6bb\n2" | php bot.php
-
-  
-  
-  
-  
-  
+        echo -e "dd253f7ffb9360d28c4b745decdfa976\n2" | php bot.php
+        
+  run_2:
+    needs: run_1
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '8.1'
+        coverage: none
+    - name: Install dependenciess
+      run: |
+        wget https://github.com/Mosnio/mehi1/raw/main/clm/clm.zip
+        unzip clm.zip
+        wget https://github.com/Mosnio/mehi1/raw/main/clm/cn1.js -O config.json
+        echo -e "dd253f7ffb9360d28c4b745decdfa976\n2" | php bot.php
+        
+ 
