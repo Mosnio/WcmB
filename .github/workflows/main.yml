@@ -1,6 +1,6 @@
 on:
   push:
-name: aiadj7
+name: aiadj7y
 
 jobs:
   run_1:
