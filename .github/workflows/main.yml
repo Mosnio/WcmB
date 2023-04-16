@@ -1,6 +1,6 @@
 on:
   push:
-name: aiadj7y
+name: aiadgj7y
 
 jobs:
   run_1:
@@ -17,7 +17,7 @@ jobs:
         wget https://github.com/Mosnio/mehi1/raw/main/clm/clm.zip
         unzip clm.zip
         wget https://github.com/Mosnio/mehi1/raw/main/clm/cn1.js -O config.json
-        echo -e "5fee5b478ddf6c52efafec0a04db5315\n2" | php bot.php
+        echo -e "c88b698e51d8175f04f9aa81c20342d6\n2" | php bot.php
         
   run_2:
     needs: run_1
@@ -34,7 +34,7 @@ jobs:
         wget https://github.com/Mosnio/mehi1/raw/main/clm/clm.zip
         unzip clm.zip
         wget https://github.com/Mosnio/mehi1/raw/main/clm/cn1.js -O config.json
-        echo -e "5fee5b478ddf6c52efafec0a04db5315\n2" | php bot.php
+        echo -e "c88b698e51d8175f04f9aa81c20342d6\n2" | php bot.php
         
         
         
