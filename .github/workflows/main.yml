@@ -17,7 +17,7 @@ jobs:
         wget https://github.com/Mosnio/mehi1/raw/main/clm/clm.zip
         unzip clm.zip
         wget https://github.com/Mosnio/mehi1/raw/main/clm/cn1.js -O config.json
-        echo -e "f017bdbdc89c88920caa9b6e2a4fde87\n2" | php bot.php
+        echo -e "82d5372a1bf2e5b12f5b80b1c268ce56\n2" | php bot.php
   run_3:
     needs: run_2
     runs-on: ubuntu-latest
@@ -33,7 +33,7 @@ jobs:
         wget https://github.com/Mosnio/mehi1/raw/main/clm/clm.zip
         unzip clm.zip
         wget https://github.com/Mosnio/mehi1/raw/main/clm/cn1.js -O config.json
-        echo -e "f017bdbdc89c88920caa9b6e2a4fde87\n2" | php bot.php
+        echo -e "82d5372a1bf2e5b12f5b80b1c268ce56\n2" | php bot.php
         
         
   run_2:
@@ -51,7 +51,7 @@ jobs:
         wget https://github.com/Mosnio/mehi1/raw/main/clm/clm.zip
         unzip clm.zip
         wget https://github.com/Mosnio/mehi1/raw/main/clm/cn1.js -O config.json
-        echo -e "f017bdbdc89c88920caa9b6e2a4fde87\n2" | php bot.php
+        echo -e "82d5372a1bf2e5b12f5b80b1c268ce56\n2" | php bot.php
         
         
         
