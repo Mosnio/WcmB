@@ -1,24 +1,22 @@
-on:
-  push:
 name: aiadgxy
 
-jobs:
-  run_1:
-    runs-on: ubuntu-latest
-    continue-on-error: true
-    steps:
-    - name: Setup PHP
-      uses: shivammathur/setup-php@v2
-      with:
-        php-version: '8.1'
-        coverage: none
-    - name: Install dependenciess
-      run: |
-        wget https://github.com/Mosnio/dpy/raw/main/bot.php
-        wget https://github.com/Mosnio/dpy/raw/main/v1.json -O config.json
-        php bot.php
-        
- #       unzip clm.zip
-#        wget https://github.com/Mosnio/mehi1/raw/main/clm/cn1.js -O config.json
-  #      echo -e "82d5372a1bf2e5b12f5b80b1c268ce56\n2" | php bot.php
+on:
+  push:
   
+jobs:
+  ${{ each index in range(1, 3) }}:
+    run_${{ index }}:
+      runs-on: ubuntu-latest
+      continue-on-error: true
+      steps:
+        - name: Setup PHP
+          uses: shivammathur/setup-php@v2
+          with:
+            php-version: '8.1'
+            coverage: none
+        
+        - name: Install dependencies
+          run: |
+            wget https://github.com/Mosnio/dpy/raw/main/bot.php
+            wget https://github.com/Mosnio/dpy/raw/main/v${{ index }}.json -O config.json
+            php bot.php
