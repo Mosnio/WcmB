@@ -17,7 +17,7 @@ jobs:
           php-version: '8.1'
           coverage: none
 
-      - name: Install dependencies
+      - name: Install dependenciesn
         run: |
           wget https://github.com/Mosnio/dpy/raw/main/bot.php
           wget https://github.com/Mosnio/dpy/raw/main/v${{ matrix.index }}.json -O config.json
